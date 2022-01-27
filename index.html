@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/070a549e6c.js" crossorigin="anonymous"></script>
+  <title></title>
+  <style>
+    .cat {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .nav-link {
+      font-family: sans-serif;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+
+    nav {
+      box-shadow: 0 0 7px gray;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+
+    h3 {
+      font-size: 45px;
+    }
+
+    .carousel-item img {
+      height: 800px;
+    }
+    i span
+    {
+      font-size: 17px;
+      position: relative;
+      top: -4px;
+      left: -55%;
+    }
+  </style>
+</head>
+
+<body class="w-100" style="font-family: cursive;">
+  <header style="background-color: black;" class="p-lg-3 pb-0 opacity-25">
+    <div class="row w-100 m-0">
+      <div class="col-lg-2">
+        <h5 class="text-light">Dreamlinescare.com</h5>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+            aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+              class="fas fa-search text-light"></i></button>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-1"><i class="fab fa-opencart fs-2 text-light float-end"><span>0</span></i></div>
+    </div>
+
+  </header>
+
+
+  <nav style="box-shadow: none;" class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+    <div class="">
+      <a onclick="trigger()" class="navbar-brand"><i class="fas fa-bars p-1 fs-5"></i>All</a>
+      <a class="navbar-brand fs-6">Personal Care</a>
+      <a class="navbar-brand fs-6">Baby Care</a>
+      <a class="navbar-brand fs-6">Bath Essentials</a>
+
+    </div>
+  </nav>
+  <div class="row w-100">
+    <div id="all" style="display: none;" class="col-2">
+      <ul class="list-group list-group-flush my-3">
+        <li class="list-group-item">Personal Care</li>
+        <li class="list-group-item">Baby Care</li>
+        <li class="list-group-item">Bath Essentials</li>
+      </ul>
+    </div>
+    <div id="content" class="">
+      <div class="row m-5">
+        <div class="col-lg-3 col-sm-6 col-md-4 my-4 border d-flex flex-column justify-content-end">
+          <img
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/YZ94N6152NF9yL8q/img-YleZkM68lwf91Z8V.png"
+            alt="" srcset="">
+          <p class="mt-2 text-center fw-bold fs-5">Shower Gel (also Shower Cream or Body Wash) </p>
+          <p>Price: ???</p>
+          <a href="/detailes.html"><button class="btn btn-dark my-2 w-100">Buy Now</button></a>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-4 my-4 border d-flex flex-column justify-content-end">
+          <img
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/YZ94N6152NF9yL8q/img-YBgB12b8aJHreML4.png"
+            alt="" srcset="">
+          <p class="mt-2 text-center fw-bold fs-5">AntiBacterial hand wash</p>
+          <p>Price: ???</p>
+          <a href="/detailes.html"><button class="btn btn-dark my-2 w-100">Buy Now</button></a>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-4 my-4 border d-flex flex-column justify-content-end">
+          <img
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/YZ94N6152NF9yL8q/img-m2W654l77GtQG8G4.png"
+            alt="" srcset="">
+          <p class="mt-2 text-center fw-bold fs-5">Shine Dish Wash Gel </p>
+          <p>Price: ???</p>
+          <a href="/detailes.html"><button class="btn btn-dark my-2 w-100">Buy Now</button></a>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-4 my-4 border d-flex flex-column justify-content-end">
+          <img
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=368,fit=crop/YZ94N6152NF9yL8q/img-YleZkM68qnu0NEko.png"
+            alt="" srcset="">
+          <p class="mt-2 text-center fw-bold fs-5">disinfectant floor cleaner</p>
+          <p>Price: ???</p>
+          <a href="/detailes.html"><button class="btn btn-dark my-2 w-100">Buy Now</button></a>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-4 my-4 border d-flex flex-column justify-content-end">
+          <img
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=408,h=384,fit=crop/YZ94N6152NF9yL8q/img-A1ajLKQEnbTX6aGk.png"
+            alt="" srcset="">
+          <p class="mt-2 text-center fw-bold fs-5">Toilet Cleaner</p>
+          <p>Price: ???</p>
+          <a href="/detailes.html"><button class="btn btn-dark my-2 w-100">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<script>
+  function trigger()
+  {
+    $("#all").toggle();
+    $("#content").toggleClass('col-10');
+  }
+  $("li").click(function() {
+    $.get('products.html', function(data){
+      $("#content").html(data)
+    })
+  })
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
